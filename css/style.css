@@ -79,6 +79,7 @@ ul li {
 
 }
 .top__btns-link,
+.footer__whatsapp-btn,
 .ftr__form-submit {
     border: 1px solid #FFFFFF;
     background: transparent;
@@ -203,6 +204,12 @@ ul li {
 
 .footer ul li a {
     text-decoration: none;
+}
+
+.footer ul li a,
+.footer__subtitle {
+    font-family: 'Muller Next Trial', sans-serif;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
@@ -219,10 +226,7 @@ ul li {
 }
 
 .footer__subtitle {
-    font-family: 'Muller Next Trial', sans-serif;
-    font-size: 14px;
     line-height: 140%;
-    color: #FFFFFF;
     margin-bottom: 40px;
     opacity: 0.5;
 }
@@ -243,6 +247,7 @@ ul li {
     font-family: 'Muller Next Trial', sans-serif;
     font-weight: 700;
     font-size: 36px;
+    color: #FFFFFF;
     line-height: 110%;
 }
 
