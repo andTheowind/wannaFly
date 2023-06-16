@@ -47,7 +47,8 @@ ul li {
 }
 
 .top__menu-link,
-.top__btns-link {
+.top__btns-link,
+.ftr__form-submit {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Muller Next Trial', sans-serif;
@@ -60,7 +61,8 @@ ul li {
 }
 
 .replenish__balance-link,
-.top__btns-link {
+.top__btns-link,
+.ftr__form-submit {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,8 +76,10 @@ ul li {
 .top__btns-item {
 
 }
-.top__btns-link {
+.top__btns-link,
+.ftr__form-submit {
     border: 1px solid #FFFFFF;
+    background: transparent;
 }
 
 .main-sctn {
@@ -228,6 +232,26 @@ ul li {
 }
 
 .service__list-link {
+
+}
+
+.form__title {
+
+}
+
+.ftr__form {
+    color: #FFFFFF;
+}
+
+.ftr__form-label {
+
+}
+
+.ftr__form-name {
+
+}
+
+.ftr__form-phone {
 
 }
 
