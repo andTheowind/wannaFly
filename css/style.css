@@ -155,6 +155,21 @@ header {
 
 
 
+.text-blocks p {
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+
+.text-blocks p b {
+    opacity: 1;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+
+
 
 
 .newsletter-sbscrptn {
