@@ -110,7 +110,7 @@
 		<div class="container footer__container">
 			<div class="row footer__row">
 
-				<div class="offset-lg-2 col-lg-2 footer__column">
+				<div class="offset-lg-1 col-lg-2 footer__column">
 					<p class="footer__subtitle">Услуги</p>
 					<ul class="service__list">
 						<li class="service__list-item"> 
@@ -168,16 +168,16 @@
 				<div class="offset-lg-1 col-lg-5 footer__column">
 
 					<p class="form__title">Мы можем связаться с вами</p>
-					<form action="" method="post" class="ftr__form">
+					<form action="send.php" method="post" class="ftr__form">
 						<div>
-							<label for="name">Ваше имя*</label>
-							<input type="text" placeholder="Ваше имя*" class="ftr__form-name" id="name">	
+							<label class="ftr__form-label" for="name">Ваше имя*</label><br>
+							<input type="text" placeholder="" class="ftr__form-name" id="name">	
 						</div>
 						<div>
-							<label for="phone">Телефон*</label>
+							<label class="ftr__form-label" for="phone">Телефон*</label><br>
 							<input type="text" placeholder="Ваше имя*" class="ftr__form-phone" id="phone">
 						</div>
-						<input type="submit" placeholder="Отправить">
+						<input type="submit" class="ftr__form-submit" placeholder="Отправить">
 					</form>
 
 				</div>
