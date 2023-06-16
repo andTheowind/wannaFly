@@ -1,0 +1,266 @@
+@import url('https://fonts.cdnfonts.com/css/muller-next-expanded-trial');
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Muller';
+    background: #1E2020;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+header {
+    padding-top: 39px;
+}
+
+
+.top__menu,
+.top__btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top__menu-item,
+.top__btns-item {
+    margin-left: 20px;
+}
+.top__menu-link {
+    line-height: 140%;
+}
+
+.top__menu-link,
+.top__btns-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Muller Next Trial', sans-serif;
+    font-size: 14px;
+}
+
+.replenish__balance-link {
+    background: #FFFFFF;
+    color: #0D192A;
+}
+
+.replenish__balance-link,
+.top__btns-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border-radius: 155px;
+}
+.top__btns {
+
+}
+.top__btns-item {
+
+}
+.top__btns-link {
+    border: 1px solid #FFFFFF;
+}
+
+.main-sctn {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.main-sction .contaier {
+
+}
+
+
+
+
+
+
+
+
+.ticket__wrap {
+    background: url(../img/main-img.png) left/ 700px 400px no-repeat, #1B3F5A;
+    border: 2px solid rgba(218, 218, 218, 0.15);
+    box-shadow: 0px 4px 87px -25px rgba(0, 0, 0, 0.15);
+    border-radius: 34px;
+}
+
+.ticket__row {
+    min-height: 360px;
+}
+
+.ticket__txt-column {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-sction .ticket__txt-column h1,
+.main-sction .ticket__txt-column h2 {
+    max-width: 425px;
+}
+
+.ticket__txt-column h1,
+.ticket__txt-column h2 {
+    font-size: 36px;
+}
+
+.main-sction .ticket__txt-column p {
+    font-family: 'Muller';
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.order-service-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 70px;
+    color: #000;
+    background: #FFFFFF;
+    border-radius: 136px;
+    text-decoration: none;
+}
+
+.ticket__img-column img {
+    max-width: 888px;
+    width: 130%;
+    top: -12px;
+    height: 110%;
+    right: -63px;
+    display: block;
+    position: absolute;
+}
+
+
+
+
+
+
+.newsletter-sbscrptn {
+    margin-bottom: 40px;
+}
+
+.newsletter-sbscrptn .ticket__img-column {
+    height: auto;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .main-sctn,
+    .newsletter-sbscrptn {
+        padding: 0 20px;
+    }
+    .ticket__row {
+        justify-content: center;
+    }
+
+    .ticket__row > div {
+        position: static;
+    }
+
+    .main-sctn .ticket__row {
+        position: relative;
+        padding-bottom: 90px;
+    }
+
+    .main-sctn .order-service-btn {
+        position: absolute;
+        bottom: 15px;
+        left: calc(50% - 110px);
+    }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .ticket__wrap {
+        background: #1B3F5A;
+    }
+
+    .ticket__txt-column {
+    }
+
+    .ticket__txt-column p {
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    /* .ticket__img-column img {
+        position: absolute; 
+    } */
+
+    .ticket__txt-column p, 
+    .ticket__txt-column h1,
+    .ticket__txt-column h2 {
+        margin-bottom: 20px;
+    }
+
+    .main-sctn .ticket__txt-column {
+        padding-top: 65px;
+        padding-bottom: 45px;
+    }
+
+    .newsletter-sbscrptn .ticket__txt-column {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    /* .main-sctn .ticket__img-column img {
+        top: 70%;
+        left: 55%;
+        transform: scale(1.375) translate(-50%, -50%);
+    }
+
+    .newsletter-sbscrptn .ticket__img-column img {
+        top: 35%;
+        left: 15%;
+        transform: scale(0.83) translate(-50%, -50%);
+    } */
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .ticket__txt-column {
+        padding-left: 53px;
+    }
+
+    /* .main-sctn .ticket__img-column img {
+        transform: scale(1.355) translate(-50%, -50%);
+        left: 62%;
+    } */
+
+}
+
+@media only screen and (min-width: 1680px) {
+    /* .main-sctn .ticket__img-column img {
+        transform: scale(1.475) translate(-50%, -50%);
+        top: 73%;
+        left: 68%;
+    } */
+}
+
+
