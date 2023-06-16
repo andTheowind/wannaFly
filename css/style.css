@@ -27,7 +27,7 @@ ul li {
     max-width: 1400px;
 }
 
-header {
+.header {
     padding-top: 39px;
 }
 
@@ -181,6 +181,21 @@ header {
     height: auto;
 }
 
+
+
+.footer {
+    background: #1B3F5A;
+    padding: 100px 0 35px 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 @media only screen and (max-width: 991px) {
     .main-sctn,
