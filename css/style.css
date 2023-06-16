@@ -87,8 +87,8 @@ ul li {
 }
 
 .main-sctn {
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin-top: 85px;
+    margin-bottom: 80px;
 }
 
 .main-sction .contaier {
@@ -172,12 +172,58 @@ ul li {
 }
 
 
-.text-blocks p b {
+.text-blocks .text-blocks__heading {
     opacity: 1;
     font-size: 24px;
     line-height: 150%;
+    font-weight: 700;
 }
 
+
+
+.logo-slider {
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo-slider__heading {
+    font-family: 'Muller Next Trial', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    color: #FFFFFF;
+}
+
+.logo-slider__item {
+}
+.logo-slider__img {
+    border: 2px solid rgba(218, 218, 218, 0.15);
+    box-shadow: 0px 4px 87px -25px rgba(0, 0, 0, 0.15);
+    border-radius: 34px;
+    padding: 10px 20px;
+}
+.logo-slider__img img {
+    height: auto;
+    width: 100%;
+}
+.logo-slider__owl-carousel {
+    margin-top: 40px;
+}
+.logo-slider__owl-carousel .owl-stage {
+    display: flex;
+}
+.logo-slider__owl-carousel .owl-item:nth-child(-n + 4) {
+    visibility: hidden;
+}
+
+.logo-slider__owl-carousel .owl-nav {
+/*    display: none;*/
+}
+
+.logo-slider__owl-carousel .owl-nav span {
+    display: none;
+}
 
 
 

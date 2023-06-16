@@ -5,16 +5,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WannaFly</title>
 	<link rel="stylesheet" href="css/fonts/Muller/stylesheet.css">
+	<!-- Подключаем сетку от бутстрапа -->
 	<link rel="stylesheet" href="css/bootstrap-grid.css"/>
+	<!-- Подключаем файл стилей -->
 	<link rel="stylesheet" href="css/style.css"/>
+	<!-- Подключаем плагин OwlCarousel -->
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
 
+	<style>
+
+		.owl-prev.owl-item--first,
+		.owl-next.owl-item--last {
+		  display: none;
+		}
+
+		.owl-prev:not(.owl-item--first),
+		.owl-next:not(.owl-item--last) {
+		  display: block;
+		}
+
+		.owl-prev:before,
+		.owl-next:before {
+		  content: "";
+		  position: absolute;
+		  top: 50%;
+		  width: 30px;
+		  height: 30px;
+		  margin-top: -15px;
+		  background: #000;
+		  border-radius: 50%;
+		}
+
+		.owl-prev:before {
+		  left: 10px;
+		}
+
+		.owl-next:before {
+		  right: 10px;
+		}
+
+	</style>
 
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-6 px-0">
 					<ul class="top__menu">
 						<li class="top__menu-item">
 							<a href="#" class="top__menu-link">Услуги</a>
@@ -33,7 +70,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-6">
+				<div class="col-6 px-0">
 					<ul class="top__btns">
 						<li class="top__btns-item">
 							<a href="#" class="top__btns-link">+7 383 258-33-00</a>
@@ -68,19 +105,64 @@
 		</section>
 
 		<section class="text-blocks">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-lg-6 pl-lg-0">
-						<p><b>Риски</b></p>
+			<div class="container text-blocks__container">
+				<div class="row text-blocks__row">
+					<div class="col-12 col-lg-6 pl-lg-0 text-blocks__column">
+						<p class="text-blocks__heading">Риски</p>
 						<p>В современный период времени проведение больших массовых мероприятий имеет особенно высокий риск опасности. Творческие встречи, концерты, праздники, спортивные соревнования, все это требует внимательного и тщательного контроля.</p>
 					</div>
-					<div class="col-12 col-lg-6 pl-lg-0">
-						<p><b>Охрана</b></p>
+					<div class="col-12 col-lg-6 pl-lg-0 text-blocks__column">
+						<p class="text-blocks__heading">Охрана</p>
 						<p>В случае обнаружения какой-либо опасности, каждому участнику встречи должна быть оказана незамедлительная помощь со стороны охранных структур. Равным образом и для предотвращения внешних угроз различного характера организация охраны массовых мероприятий является обязательным условием.</p>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
+
+
+
+	    <section class="logo-slider"> 
+	    	<div class="container logo-slider__container"> 
+	    		<div class="row logo-slider__row"> 
+	    			<div class="col-12 px-lg-0 logo-slider__column"> 
+	    				<p class="logo-slider__heading">Наши клиенты</p>
+	    			</div> 
+	    			<div class="col-12 px-lg-0 logo-slider__column"> 
+	    				<div class="logo-slider__owl-carousel-wrap"> 
+	    					<div class="logo-slider__owl-carousel logo-slider__owl-theme"> 
+	    						<div class="logo-slider__item"> 
+	    							<div class="logo-slider__img">
+	    								<img src="img/logo-1.png" alt="">	
+	    							</div>
+	                  			</div>
+				                <div class="logo-slider__item">
+				                    <div class="logo-slider__img">
+				                      	<img src="img/logo-2.png" alt="">	
+				                    </div>
+				                </div>
+				                <div class="logo-slider__item">
+				                    <div class="logo-slider__img">
+				                      	<img src="img/logo-3.png" alt="">
+				                    </div>
+				                </div>
+				                <div class="logo-slider__item">
+				                    <div class="logo-slider__img">
+				                      	<img src="img/logo-4.png" alt="">
+				                    </div>
+				                </div>
+				                <div class="logo-slider__item">
+				                    <div class="logo-slider__img">
+				                      	<img src="img/logo-2.png" alt="">
+				                    </div>
+				                </div>
+	                		</div>
+	              		</div>
+	            	</div>
+	            </div>
+	        </div>
+	    </section>
 
 
 
@@ -186,6 +268,10 @@
 		</div>
 		
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/slider-script.js"></script>
 	
 </body>
 </html>
