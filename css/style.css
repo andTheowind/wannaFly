@@ -48,6 +48,7 @@ ul li {
 
 .top__menu-link,
 .top__btns-link,
+.footer__whatsapp-btn,
 .ftr__form-submit {
     color: #FFFFFF;
     text-decoration: none;
@@ -62,6 +63,7 @@ ul li {
 
 .replenish__balance-link,
 .top__btns-link,
+.footer__whatsapp-btn,
 .ftr__form-submit {
     display: flex;
     flex-direction: column;
@@ -221,6 +223,8 @@ ul li {
     font-size: 14px;
     line-height: 140%;
     color: #FFFFFF;
+    margin-bottom: 40px;
+    opacity: 0.5;
 }
 
 .service__list {
@@ -236,7 +240,10 @@ ul li {
 }
 
 .form__title {
-
+    font-family: 'Muller Next Trial', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
 }
 
 .ftr__form {
