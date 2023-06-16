@@ -192,11 +192,43 @@ ul li {
 
 .footer ul li {
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .footer ul li a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.footer__container {
+
+}
+
+.footer__row {
+
+}
+
+.footer__column {
+
+}
+
+.footer__subtitle {
+    font-family: 'Muller Next Trial', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.service__list {
+
+}
+
+.service__list-item {
+    
+}
+
+.service__list-link {
+
 }
 
 @media only screen and (max-width: 991px) {
