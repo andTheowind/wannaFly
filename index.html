@@ -14,46 +14,11 @@
 </head>
 <body>
 
-	<style>
-
-		.owl-prev.owl-item--first,
-		.owl-next.owl-item--last {
-		  display: none;
-		}
-
-		.owl-prev:not(.owl-item--first),
-		.owl-next:not(.owl-item--last) {
-		  display: block;
-		}
-
-		.owl-prev:before,
-		.owl-next:before {
-		  content: "";
-		  position: absolute;
-		  top: 50%;
-		  width: 30px;
-		  height: 30px;
-		  margin-top: -15px;
-		  background: #000;
-		  border-radius: 50%;
-		}
-
-		.owl-prev:before {
-		  left: 10px;
-		}
-
-		.owl-next:before {
-		  right: 10px;
-		}
-
-
-
-	</style>
 
 	<header class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-7 col-xl-6 px-0">
+		<div class="container header__container">
+			<div class="row header__row">
+				<div class="col-12 col-lg-7 col-xl-6 px-0 header__column-one">
 					<ul class="top__menu">
 						<li class="top__menu-item">
 							<a href="#" class="top__menu-link">Услуги</a>
@@ -71,8 +36,12 @@
 							<a href="#" class="top__menu-link replenish__balance-link">Пополнить баланс</a>
 						</li>
 					</ul>
+					<div class="burger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
 				</div>
-				<div class="col-5 col-xl-6 px-0">
+				<div class="col-5 col-xl-6 px-0 header__column-two">
 					<ul class="top__btns">
 						<li class="top__btns-item">
 							<a href="#" class="top__btns-link">+7 383 258-33-00</a>
@@ -85,16 +54,23 @@
 			</div>
 		</div>
 	</header>
-
 	
 	<main class="main">
 
 		<section class="main-sctn">
-			<div class="container ticket__wrap">
+			<div class="container ticket__wrap top-dots-bg">
 				<div class="row ticket__row">
 					<div class="col-12 col-lg-6 col-xl-7 ticket__txt-column">
 						<div class="ticket__txt-content">
-							<p>Главная / Безопасность бизнеса / Обеспечение порядка в местах проведения массовых мероприятий</p>
+							<ul>
+							    <li>
+							    	<a href="#">Главная / </a>
+							    	<a href="#">Безопасность бизнеса / </a>
+								    <span>
+								    	Обеспечение порядка в местах проведения массовых мероприятий
+									</span>
+								</li>
+							</ul>
 							<h2>Обеспечение порядка  в местах проведения массовых мероприятий</h2>
 							<a href="#" class="order-service-btn">Заказать услугу</a>
 						</div>
@@ -120,10 +96,6 @@
 				</div>
 			</div>
 		</section>
-
-
-
-
 
 	    <section class="logo-slider"> 
 	    	<div class="container logo-slider__container"> 
@@ -166,11 +138,8 @@
 	        </div>
 	    </section>
 
-
-
-
 		<section class="newsletter-sbscrptn">
-			<div class="container ticket__wrap">
+			<div class="container ticket__wrap dots-bg">
 				<div class="row ticket__row">
 					<div class="col-12 col-lg-6 col-xl-7 ticket__txt-column">
 						<div class="ticket__txt-content">
@@ -182,8 +151,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-9 col-lg-6 col-xl-5 ticket__img-column">
-						<img src="img/newsletter-img.png" alt="">
+					<div class="col-12 col-sm-6 col-lg-6 col-xl-5 ticket__img-column">
+						<img src="img/newsletter-img.png" class="news-img" alt="">
 					</div>
 				</div>
 			</div>
@@ -197,7 +166,7 @@
 		<div class="container footer__container">
 			<div class="row footer__row">
 
-				<div class="offset-lg-2 col-6 col-lg-2 px-lg-0 footer__column">
+				<div class="offset-lg-1 offset-xl-2 col-6 col-lg-2 px-lg-0 footer__column">
 					<p class="footer__subtitle">Услуги</p>
 					<ul class="service__list">
 						<li class="service__list-item"> 
@@ -278,7 +247,14 @@
 							  <option value="Завтра в обед">Завтра в обед</option>
 							</select>
 						</div>
-						<input type="submit" class="ftr__form-submit" placeholder="Отправить">
+						<div>
+							<label class="ftr__form-label">* - обязательное поле</label>
+						</div>
+						<div class="form__send-wrap">
+							<input type="submit" class="ftr__form-submit" id="ftr-send-btn" placeholder="Отправить">
+							<label class="ftr__form-label" for="ftr-send-btn">Нажимая «Отправить» вы соглашаетесь с обработкой персональных данных</label>
+						</div>
+						
 					</form>
 
 				</div>
@@ -295,14 +271,20 @@
 					</div>
 					<div class="col-auto">
 						<div class="footer__bottom-txt">
-							<p>Политика конфендициальности</p>
+							<a href="#">Политика конфендициальности</a>
 						</div>
 					</div>
 					<div class="col-auto">
-						<div class="footer__bottom-icons">	
-							<img src="img/inst-img.png" alt="">
-							<img src="img/vk-img.png" alt="">
-							<img src="img/facebook-img.png" alt="">
+						<div class="footer__bottom-icons">
+							<a href="#">
+								<img src="img/inst-img.png" alt="">
+							</a>	
+							<a href="#">
+								<img src="img/vk-img.png" alt="">
+							</a>
+							<a href="#">
+								<img src="img/facebook-img.png" alt="">
+							</a>
 						</div>
 					</div>
 
@@ -315,6 +297,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/slider-script.js"></script>
+    <script src="js/nav-menu.js"></script>
 	
 </body>
 </html>
