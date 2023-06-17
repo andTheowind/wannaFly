@@ -46,12 +46,14 @@
 		  right: 10px;
 		}
 
+
+
 	</style>
 
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-6 px-0">
+				<div class="col-7 col-xl-6 px-0">
 					<ul class="top__menu">
 						<li class="top__menu-item">
 							<a href="#" class="top__menu-link">Услуги</a>
@@ -70,7 +72,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-6 px-0">
+				<div class="col-5 col-xl-6 px-0">
 					<ul class="top__btns">
 						<li class="top__btns-item">
 							<a href="#" class="top__btns-link">+7 383 258-33-00</a>
@@ -98,7 +100,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-sm-9 col-lg-6 col-xl-5 ticket__img-column">
-						<!-- <img src="img/main-img.png" alt=""> -->
+						<img src="img/main-img.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -192,7 +194,7 @@
 		<div class="container footer__container">
 			<div class="row footer__row">
 
-				<div class="offset-lg-2 col-lg-2 px-lg-0 footer__column">
+				<div class="offset-lg-2 col-6 col-lg-2 px-lg-0 footer__column">
 					<p class="footer__subtitle">Услуги</p>
 					<ul class="service__list">
 						<li class="service__list-item"> 
@@ -220,7 +222,7 @@
 					<a href="#" class="footer__whatsapp-btn">Написать в WhatsApp</a>
 				</div>
 
-				<div class="offset-lg-1 col-lg-2 px-lg-0 footer__column">
+				<div class="offset-lg-1 col-6 col-lg-2 px-lg-0 footer__column">
 					<p class="footer__subtitle">Прочее</p>
 					<ul class="pages__list">
 						<li class="pages__list-item">
@@ -256,8 +258,22 @@
 							<input type="text" placeholder="" class="ftr__form-name" id="name">	
 						</div>
 						<div>
+							<label class="ftr__form-label" for="types">Тип вопроса</label><br>
+							<select name="types" class="ftr__form-types" id="types">
+							  <option value="Мне нужна консультация" selected>Мне нужна консультация</option>
+							  <option value="Коммерческое предложение">Коммерческое предложение</option>
+							</select>
+						</div>
+						<div>
 							<label class="ftr__form-label" for="phone">Телефон*</label><br>
 							<input type="text" placeholder="+7" class="ftr__form-phone" id="phone">
+						</div>
+						<div>
+							<label class="ftr__form-label" for="comfort-time">Удобное время</label><br>
+							<select name="comfort-time" class="ftr__form-time" id="comfort-time">
+							  <option value="Сейчас" selected>Сейчас</option>
+							  <option value="Завтра в обед">Завтра в обед</option>
+							</select>
 						</div>
 						<input type="submit" class="ftr__form-submit" placeholder="Отправить">
 					</form>
@@ -265,6 +281,30 @@
 				</div>
 
 			</div>
+
+			<div class="row footer__row">
+				<div class="footer__bottom">	
+
+					<div class="col-auto ">
+						<div class="footer__bottom-txt">
+							<p>&copy 2022 Блок 54. Все авторские права защищены</p>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="footer__bottom-txt">
+							<p>Политика конфендициальности</p>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="footer__bottom-icons">	
+							<img src="img/inst-img.png" alt="">
+							<img src="img/vk-img.png" alt="">
+							<img src="img/facebook-img.png" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>	
 		</div>
 		
 	</footer>
